@@ -1,457 +1,172 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td
-  margin 0
-  padding 0
-  border 0
-  outline 0
-  font-weight inherit
-  font-style inherit
-  font-family inherit
-  font-size 100%
-  vertical-align baseline
+.container
+  background: #2c3f4d
+  font-family: Arial, Helvetica, sans-serif
+  color: #FFF
+  width: 100%
+  margin: 0 auto
+  padding: 10px
 
-body
-  line-height 1
-  color #000
-  background #fff
-  font-family "Open Sans", sans-serif
-  font-weight 400
-  font-size 14px/1.5
-  color #333
-  background-color #fff
-  -webkit-text-size-adjust 100%
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-rendering optimizeLegibility
-  -webkit-font-feature-settings 'liga', 'kern'
-  -moz-font-feature-settings 'liga', 'kern'
-  font-feature-settings 'liga', 'kern'
+.header
+  width: 100%
+  height: 165px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-around
 
-ol,
-ul
-  list-style none
+.header p
+  font-size: 20px
 
-table
-  border-collapse separate
-  border-spacing 0
-  vertical-align middle
-
-caption,
-th,
-td
-  text-align left
-  font-weight normal
-  vertical-align middle
-
-a
-  img
-    border none
-
-html,
-body
-  height 100%
-  width 100%
-
-.navbar
-  *zoom 1
-  float left
-  clear none
-  text-align inherit
-  width 100%
-  margin-left 0%
-  margin-right 3%
-  position absolute
-  -webkit-transform-style preserve-3d
-  -o-transform-style preserve-3d
-  -ms-transform-style preserve-3d
-  transform-style preserve-3d
-  left 50%
-  -webkit-transform translateX(-50%)
-  -ms-transform translateX(-50%)
-  transform translateX(-50%)
-  padding-top 30px
-  float left
-  width 100%
-  &:after
-    clear both
-  &:last-child
-    margin-right 0%
-  a
-    color inherit
-    text-decoration none
-    -webkit-tap-highlight-color transparent
-    -webkit-transition opacity 0.2s linear
-    transition opacity 0.2s linear
-    -webkit-transform translateX(50%)
-    -ms-transform translateX(50%)
-    transform translateX(50%)
-    margin-bottom 0
-    font-size 16px
-    font-weight 300
-    line-height 1
-  .navbar-title
-    display none
-    position static
-    float left
-    left 50%
-  .navbar-links
-    *zoom 1
-    width auto
-    max-width 1440px
-    float none
-    display block
-    margin-right auto
-    margin-left auto
-    padding-left 0
-    padding-right 0
-    &:after
-      clear both
-    .navbar-link
-      padding 0 15px
-      border-right 1px solid rgba(255,255,255,0.3)
-      &:last-child
-        border-right none
-
-.navbar:before,
-.navbar:after
-  content ''
-  display table
-
-.navbar a:focus,
-.navbar a:active
-  opacity 0.5
-  -ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
-  filter alpha(opacity=50)
-
-.navbar .navbar-links:before,
-.navbar .navbar-links:after
-  content ''
-  display table
-
-.main-header
-  height 100%
-  width 100%
-  min-height 450px
-  color #fff
-  text-align center
-  background-color #cf4646
-
-.main-header-content
-  position absolute
-  -webkit-transform-style preserve-3d
-  -o-transform-style preserve-3d
-  -ms-transform-style preserve-3d
-  transform-style preserve-3d
-  top 50%
-  left 50%
-  -webkit-transform translate(-50%, -50%)
-  -ms-transform translate(-50%, -50%)
-  transform translate(-50%, -50%)
-
-.logo
-  max-width 20vh
-  max-height 20vh
-
-.main-header-text
-  width 90vw
-  -webkit-animation fadein 2s
-  -ms-animation fadein 2s
-  animation fadein 2s
-  margin-bottom 60px
-  font-size 41px
-  font-weight 300
-  line-height 60px
-
-.main-header-btn
-  -webkit-transition all 0.4s
-  transition all 0.4s
-  color inherit
-  padding 15px 20px 16px
-  vertical-align top
-  cursor pointer
-  border 1px solid #fff
-  border-radius 3px
-  text-decoration none
-  -webkit-tap-highlight-color transparent
-  -webkit-animation fadein 2s
-  -ms-animation fadein 2s
-  animation fadein 2s
-  text-shadow none
-  color #333
-  background-color #fff
-  font-size 22px
-  &:hover
-    box-shadow 0 0 50px rgba(255,255,255,0.3)
+.titulo
+  padding: 10px
+  border: 1px solid #FFF
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif
+  text-align: center
+  color: #f0c413
 
 .main-info
-  *zoom 1
-  width auto
-  max-width 1024px
-  float none
-  display block
-  margin-right auto
-  margin-left auto
-  padding-left 0
-  padding-right 0
-  background-color #fff
-  &:after
-    clear both
+  background: #F1F1F1
+  padding: 10px
 
-.main-info:before,
-.main-info:after
-  content ''
-  display table
+.main-info div
+  width: 90%
 
-.benefits
-  *zoom 1
-  float left
-  clear none
-  text-align inherit
-  width 100%
-  margin-left 0%
-  margin-right 3%
-  *zoom 1
-  width auto
-  max-width 1024px
-  float none
-  display block
-  margin-right auto
-  margin-left auto
-  padding-left 0
-  padding-right 0
-  padding 50px
-  &:after
-    clear both
-    clear both
-  &:last-child
-    margin-right 0%
-  .benefit
-    margin-top 50px
-    &:after
-      clear both
-      clear both
-    &:nth-child(2n)
-      margin-right 0%
-      float right
-    &:nth-child(2n
-      & + 1)
-        clear both
-    &:nth-child(4n)
-      margin-right 0%
-      float right
-    &:nth-child(4n
-      & + 1)
-        clear both
-    &:first-child
-      margin-left auto
-    &:last-child
-      margin-right auto
-    .benefit-text
-      color #7f8c8d
-      font-size 16px
-      line-height 26px
+.descripcion
+  background: #F1F1F1
+  border: 1px solid #c3c5b5
+  display: inline-block
+  width: 885px
+  margin: 20px 0
+  padding: 20px
 
-.benefits:before,
-.benefits:after
-  content ''
-  display table
-  content ''
-  display table
+.imagen
+  float: right
+  margin-right: 20px
 
-@media
-  screen
-    and
-      (min-width
-        &:
-          700px)
-            .benefits .benefit {
-    *zoom 1
-            float left
-            clear none
-            text-align inherit
-            width 48.5%
-            margin-left 0%
-            margin-right 3%
-      (max-width
-        &:
-          768px)
-            .sample .sample-code {
-    display block
-            clear both
-            float none
-            width 100%
-            margin-left auto
-            margin-right auto
-            .sample .sample-text {
-    display block
-            clear both
-            float none
-            width 100%
-            margin-left auto
-            margin-right auto
-            text-align center
+.productos
+  background: #F1F1F1
+  border: 1px solid #c3c5b5
+  display: inline-block
+  width: 100%
+  margin: 20px 0
+  padding: 20px
 
-.benefits .benefit:before,
-  .benefits .benefit:after
-  content ''
-  display table
-  content ''
-  display table
+.logos
+  height: 110px
 
-}
-  @media
-    screen
-      and
-        (max-width
-          &:
-            700px)
-              .benefits .benefit {
-    *zoom 1
-              float left
-              clear none
-              text-align inherit
-              width 48.5%
-              margin-left 0%
-              margin-right 3%
-              display block
-              clear both
-              float none
-              width 100%
-              margin-left auto
-              margin-right auto
-  .benefits
-    .benefit
-      .benefit-title
-        margin-bottom 14px
-        font-size 22px
-        font-weight 500
-  .sample
-    .sample-text
-      *zoom 1
-      float left
-      clear none
-      text-align inherit
-      width 48.5%
-      margin-left 0%
-      margin-right 3%
-      margin-bottom 1.5em
-      font-size 18px
-      line-height 20px
-      color #555
-  @-webkit-keyframes
-    fadein
-      from {
-    opacity 0
-      -ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
-      filter alpha(opacity=0)
-  @keyframes
-    fadein
-      from {
-    opacity 0
-      -ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
-      filter alpha(opacity=0)
+.logos img
+  height: 50%
 
-.sample
-  min-height 150px
-  .sample-code
-    *zoom 1
-    float left
-    clear none
-    text-align inherit
-    width 48.5%
-    margin-left 0%
-    margin-right 3%
-    font-size 16px
-    line-height 18px
-    &:after
-      clear both
-    &:last-child
-      margin-right 0%
-      margin-right auto
-    code
-      border-radius 2px
-    &:first-child
-      margin-left auto
-  .sample-text
-    &:after
-      clear both
-    &:last-child
-      margin-right 0%
-      margin-right auto
-    &:first-child
-      margin-left auto
+.descripcionproducto
+  margin: 10px 0
+  font-family: Arial, Helvetica, sans-serif
+  color: #555
+  line-height: 40px
 
-.sample .sample-code:before,
-.sample .sample-code:after
-  content ''
-  display table
+.item
+  list-style: square inside
+  margin: 10px 0
+  padding: 0
 
-.sample .sample-text:before,
-.sample .sample-text:after
-  content ''
-  display table
+.servicio
+  height: 242px
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif
+  color: #FFF
+  padding: 15px
+  margin: 10px
 
-to
-  opacity 1
-  -ms-filter none
-  -webkit-filter none
-  filter none
-  opacity 1
-  -ms-filter none
-  -webkit-filter none
-  filter none
+.servicios
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+
+.flexproductos
+  width: 100%
+  display: flex
+
+.container
+
+.header
+
+.header > p
+
+.logos
+
+.logos > img
+  margin-top: 20px
+
+.titulo
+
+.titulo > h1
+  margin: 0
+  padding: 0
+  font-size: 60px
+
+.titulo > h2
+  margin: 0
+  padding: 0
+  font-size: 32px
+
+.flexproductos
+
+.productos
+
+.productos > div
+  float: left
+  width: 442px
+  background: url(images/meli-template-separator.jpg) right 0 repeat-y
+
+.productos > div > div
+  float: left
+  width: 317px
+
+.productos > div > div > h4
+  margin: 0
+  padding: 0
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif
+  font-size: 18px
+  color: #333
+  font-weight: bold
+
+.item
+
+.experiencia
+
+.main-info
+
+.main-info > div
+  padding: 20px 0
+  clear: both
+  margin: auto
+
+.main-info > div > h4
+  padding: 0
+  margin: 0
+  font-family: Calibri, Arial, Helvetica, sans-serif
+  color: #333
+  font-size: 16px
+  font-weight: bold
+  text-transform: uppercase
+  line-height: 16px
+
+.descripcionproducto
+
+.servicios
+  padding: 20px 0
+  clear: both
+  margin: auto
+
+.servicio
+  background: #f0a70a
+
+.servicio > div
+  float: left
+  width: 189px
+
+.servicio > div > h4
+  text-transform: uppercase
+  font-size: 20px
+  font-weight: bold
+  margin: 0 0 10px
+  padding: 0
+

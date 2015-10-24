@@ -11,11 +11,11 @@ var gulp = require('gulp'),
     http = require('http'),
     st = require('st'),
     livereload = require('gulp-livereload'),
-    prettify = require('gulp-html-prettify');
+    prettify = require('gulp-html-prettify'),
+    stylus = require('gulp-stylus');
 
 var options = {nspaces:2};
 
-//tarea por defecto
 gulp.task('html2jade', function(){
     gulp.src('dist/html/*.html')
         .pipe(html2jade(options))
@@ -34,9 +34,18 @@ gulp.task('jade2html', function(){
         //formatear el html luego y volver a convertir ese html en jade
 })
 
+gulp.task('stylus2css', function(){
+    gulp.src('templates/stylus/*.styl')
+        .pipe(plumber())
+        .pipe(stylus())
+        .pipe(gulp.dest('dist/css/'))
+        .pipe(livereload());
+})
+
 gulp.task('watch',['server'], function(){
     livereload.listen({basePath: 'dist/html'});
     gulp.watch('templates/jade/*.jade', ['jade2html']);
+    gulp.watch('templates/stylus/*.styl',['stylus2css']);
 });
 
 //generar servidor estatico http
